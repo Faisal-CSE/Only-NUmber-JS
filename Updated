@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Address Track</title>
+    </head>
+    
+<body>
+<h2>Details Address</h2>
+
+<form action="">
+  User ID : <input type="text" required name="PID" id="PID" value="" placeholder="Enter user ID" autocomplete="off" onkeypress="return isNumberKey(event)">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+<div style="margin-top: 20px;padding: 3%">   
+    <div style="width: 48%; height: 50%;float:left;padding: 5px">
+        <h3>Current Address Format</h3>
+        <div style="width: 50%; height: 50%;float:left;">
+            <p>Present Address</p>
+            <p>Permanent Address zxvdfgdfdsfjh fdsfusdhf uf sdhgfuasd syudgfyu f</p>
+        </div>
+        <div style="width: 48%; height: 50%;float:left;">
+            <p>Permanent Address</p>
+            <p>Permanent Address zxvdfgdfdsfjh fdsfusdhf uf sdhgfuasd syudgfyu f</p>
+        </div>
+    
+    </div>
+    
+    <div style="width: 50%; height: 50%;float:right;padding: 5px">
+        <h3>New Address Format</h3>
+        <div style="width: 48%; height: 48%;float:left;">
+            <p>Present Address</p>
+            <p>Permanent Address zxvdfgdfdsfjh fdsfusdhf uf sdhgfuasd syudgfyu f</p>
+        </div>
+        <div style="width: 48%; height: 48%;float:left;">
+            <p>Permanent Address</p>
+            <p>Permanent Address zxvdfgdfdsfjh fdsfusdhf uf sdhgfuasd syudgfyu f</p>
+        </div>
+    </div>
+</div>
+
+
+<SCRIPT language=Javascript>
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+    }
+</SCRIPT>
+
+</body>
+</html>
